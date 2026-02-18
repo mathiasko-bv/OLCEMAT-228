@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLCEMAT & TSHéTSHéBA</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * {margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat', sans-serif;}
+  html {scroll-behavior: smooth;}
+  body {background:#f5f5f5; color:#111;}
+  a {text-decoration:none; color:inherit;}
+
+  header {
+    display:flex; justify-content:space-between; align-items:center; 
+    padding:20px 50px; background:#111; color:white; position:sticky; top:0; z-index:1000;
+  }
+  header nav a {margin-left:25px; font-weight:600; transition:0.3s;}
+  header nav a:hover {color:#f39c12;}
+
+  .hero {
+    height:80vh; background:#222; display:flex; align-items:center; justify-content:center; 
+    color:white; text-align:center;
+  }
+  .hero h1 {
+    font-size:3rem; opacity:0;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {opacity:0; transform:translateY(50px);}
+    100% {opacity:1; transform:translateY(0);}
+  }
+
+  section {padding:80px 50px;}
+  section h2 {text-align:center; font-size:2.5rem; margin-bottom:50px; color:#111;}
+  .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px;}
+
+  .card {
+    background:white; border-radius:15px; overflow:hidden; 
+    box-shadow:0 5px 25px rgba(0,0,0,0.1); transition:0.4s;
+  }
+  .card:hover {
+    transform:translateY(-10px); 
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+  }
+  .card img {width:100%; display:block; height:auto; transition: transform 0.4s ease;}
+  .card:hover img {transform: scale(1.05);}
+  .card-content {padding:20px; text-align:center;}
+  .card-content h3 {margin-bottom:10px; font-size:1.5rem; color:#111;}
+  .card-content p {margin-bottom:15px; color:#555; font-weight:500;}
+  .card-content a button {
+    padding:12px 30px; border:none; border-radius:50px; 
+    background:#f39c12; color:white; font-weight:700; cursor:pointer; transition:0.4s all;
+  }
+  .card-content a button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background:#e67e22;
+  }
+
+  footer {background:#111; color:white; text-align:center; padding:30px 20px;}
+  footer a {color:#f39c12; margin:0 10px;}
+
+  @media (max-width:768px) {
+    header {flex-direction:column; padding:20px;}
+    header nav a {margin:10px;}
+    .hero h1 {font-size:2rem; padding:0 10px;}
+    section {padding:50px 20px;}
+    .card-content h3 {font-size:1.2rem;}
+    .card-content a button {padding:10px 20px; font-size:0.9rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><h1>OLCEMAT & TSHéTSHéBA</h1></div>
+  <nav>
+    <a href="#olcemat">OLCEMAT</a>
+    <a href="#tshetsheba">TSHéTSHéBA</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Bienvenue dans l'univers OLCEMAT & TSHéTSHéBA Faites vos achats en toutes securité</h1>
+</div>
+
+<!-- SECTION OLCEMAT -->
+<section id="olcemat">
+  <h2>OLCEMAT</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="2.png" alt="OLCEMAT Hoodies Noir / Beige / Gris / Bleu / Royal">
+      <div class="card-content">
+        <h3>Hoodie Multi-Couleurs</h3>
+        <p>Rien que de la qualité</p>
+        <a href="https://wa.me/22997881613?text=Bonjour,%20je%20souhaite%20commander%20ce%20Hoodie%20Multi-Couleurs" target="_blank">
+          <button>Commander</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="1.png" alt="OLCEMAT Hoodie Bleu et Blanc">
+      <div class="card-content">
+        <h3>Hoodie Bleu / Blanc</h3>
+        <p>Rien que de la qualité</p>
+        <a href="https://wa.me/22997881613?text=Bonjour,%20je%20souhaite%20commander%20ce%20Hoodie%20Bleu%20Blanc" target="_blank">
+          <button>Commander</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="5.png" alt="OLCEMAT Hoodie Rose">
+      <div class="card-content">
+        <h3>Hoodie Rose</h3>
+        <p>Rien que de la qualité</p>
+        <a href="https://wa.me/22997881613?text=Bonjour,%20je%20souhaite%20commander%20ce%20Hoodie%20Rose" target="_blank">
+          <button>Commander</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION TSHéTSHéBA -->
+<section id="tshetsheba">
+  <h2>TSHéTSHéBA</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="/mnt/data/A_digital_photograph_features_a_young_African_woma.png" alt="TSHéTSHéBA Hoodie Rose Love">
+      <div class="card-content">
+        <h3>Hoodie Rose 💖</h3>
+        <p>Rien que de la qualité</p>
+        <a href="https://wa.me/22997881613?text=Bonjour,%20je%20souhaite%20commander%20ce%20Hoodie%20Rose%20TSHéTSHéBA" target="_blank">
+          <button>Commander</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <p>Contactez-nous :</p>
+  <p>📞 +228 98 20 72 31</p>
+  <p>✉️ <a href="mailto:riocresus@gmail.com">riocresus@gmail.com</a></p>
+  <p>📸 Instagram : <a href="https://www.instagram.com/rio_cresus?igsh=YzljYTk1ODg3Zg==" target="_blank">rio_cresus</a></p>
+  <p> AVEC NOUS C'EST DU VRAI *TÉMÉLEFOUNOU* </p>
+  <p>© 2026 OLCEMAT & TSHéTSHéBA</p>
+</footer>
+
+</body>
+</html>
